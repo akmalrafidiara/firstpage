@@ -7,11 +7,10 @@
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 .container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   width: 80%;
   background-color: #25316D;
   margin-bottom: 100px;
@@ -62,4 +61,14 @@ body {
   background-color: #97D2EC;
   color: #25316D;
   text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    background-color: #000;
+  }
+  .gambar, .biodata, .sosmed {
+    width: 100%;
+  }
 }
